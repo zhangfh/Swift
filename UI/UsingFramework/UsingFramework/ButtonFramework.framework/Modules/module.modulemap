@@ -1,0 +1,10 @@
+framework module ButtonFramework {
+  umbrella header "ButtonFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module ButtonFramework.Swift {
+    header "ButtonFramework-Swift.h"
+}
