@@ -14,6 +14,8 @@
 		ECE9128F1ED90E53004F3B3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE9128D1ED90E53004F3B3A /* LaunchScreen.storyboard */; };
 		ECE9129A1ED90E54004F3B3A /* SingleXibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE912991ED90E54004F3B3A /* SingleXibTests.swift */; };
 		ECE912A51ED90E54004F3B3A /* SingleXibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE912A41ED90E54004F3B3A /* SingleXibUITests.swift */; };
+		ECE912B41ED90E82004F3B3A /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECE912B31ED90E82004F3B3A /* CardView.xib */; };
+		ECE912B61ED90EA5004F3B3A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE912B51ED90EA5004F3B3A /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		ECE912A01ED90E54004F3B3A /* SingleXibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingleXibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE912A41ED90E54004F3B3A /* SingleXibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleXibUITests.swift; sourceTree = "<group>"; };
 		ECE912A61ED90E54004F3B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE912B31ED90E82004F3B3A /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		ECE912B51ED90EA5004F3B3A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		ECE912831ED90E53004F3B3A /* SingleXib */ = {
 			isa = PBXGroup;
 			children = (
+				ECE912B21ED90E68004F3B3A /* UI */,
 				ECE912841ED90E53004F3B3A /* AppDelegate.swift */,
 				ECE912861ED90E53004F3B3A /* ViewController.swift */,
 				ECE912881ED90E53004F3B3A /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				ECE912A61ED90E54004F3B3A /* Info.plist */,
 			);
 			path = SingleXibUITests;
+			sourceTree = "<group>";
+		};
+		ECE912B21ED90E68004F3B3A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ECE912B31ED90E82004F3B3A /* CardView.xib */,
+				ECE912B51ED90EA5004F3B3A /* CardView.swift */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +207,7 @@
 				TargetAttributes = {
 					ECE912801ED90E53004F3B3A = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					ECE912941ED90E54004F3B3A = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -234,6 +248,7 @@
 			files = (
 				ECE9128F1ED90E53004F3B3A /* LaunchScreen.storyboard in Resources */,
 				ECE9128C1ED90E53004F3B3A /* Assets.xcassets in Resources */,
+				ECE912B41ED90E82004F3B3A /* CardView.xib in Resources */,
 				ECE9128A1ED90E53004F3B3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE912871ED90E53004F3B3A /* ViewController.swift in Sources */,
+				ECE912B61ED90EA5004F3B3A /* CardView.swift in Sources */,
 				ECE912851ED90E53004F3B3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SingleXib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lonshinetech.SingleXib;
@@ -424,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SingleXib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lonshinetech.SingleXib;
