@@ -1,0 +1,40 @@
+{ "alveolars" : [
+		{ 
+		  "firstName":"chun" , 
+		  "image":"chun",
+		  "audio":"chun",
+		  "pronunciation":"chun", 
+		  "characters":"日", 
+		  "strokes":"9", 
+		  "explain1":"一年的第一季", 
+		  "explain2":"生机", 
+		  "word1":"春季", 
+		  "word2":"大地回春"
+		},
+		{ 
+		  "firstName":"pin" , 
+		  "image":"pin",
+		  "audio":"pin",
+		  "pronunciation":"pin", 
+		  "characters":"扌", 
+		  "strokes":"9", 
+		  "explain1":"连合，凑合", 
+		  "explain2":"不顾一切地奋斗",
+		  "word1":"拼凑", 
+		  "word2":"拼力" 
+		},
+		{ 
+		  "firstName":"men" , 
+		  "image":"men",
+		  "audio":"men",
+		  "pronunciation":"men", 
+		  "characters":"门", 
+		  "strokes":"3", 
+		  "explain1":"建筑物的出入口", 
+		  "explain2":"量词",
+		  "word1":"门口", 
+		  "word2":"一门大炮" 
+		  
+		}
+	]
+}

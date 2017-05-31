@@ -22,6 +22,9 @@
 		ECE913021ED93E7D004F3B3A /* chun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE912FF1ED93E7D004F3B3A /* chun.mp3 */; };
 		ECE913031ED93E7D004F3B3A /* men.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE913001ED93E7D004F3B3A /* men.mp3 */; };
 		ECE913041ED93E7D004F3B3A /* pin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE913011ED93E7D004F3B3A /* pin.mp3 */; };
+		ECEC1CEB1EDE83280070D69C /* pinyin.json in Resources */ = {isa = PBXBuildFile; fileRef = ECEC1CEA1EDE83280070D69C /* pinyin.json */; };
+		ECEC1CEE1EDE83540070D69C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC1CED1EDE83540070D69C /* DataManager.swift */; };
+		ECEC1CF11EDE8A930070D69C /* PinyinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC1CF01EDE8A930070D69C /* PinyinModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		ECE912FF1ED93E7D004F3B3A /* chun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chun.mp3; sourceTree = "<group>"; };
 		ECE913001ED93E7D004F3B3A /* men.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = men.mp3; sourceTree = "<group>"; };
 		ECE913011ED93E7D004F3B3A /* pin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pin.mp3; sourceTree = "<group>"; };
+		ECEC1CEA1EDE83280070D69C /* pinyin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pinyin.json; sourceTree = "<group>"; };
+		ECEC1CED1EDE83540070D69C /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		ECEC1CF01EDE8A930070D69C /* PinyinModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinyinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,9 @@
 		ECE912C21ED937E0004F3B3A /* StudentPronouceApp */ = {
 			isa = PBXGroup;
 			children = (
+				ECEC1CEF1EDE8A7D0070D69C /* Model */,
+				ECEC1CEC1EDE83460070D69C /* jsonmodel */,
+				ECEC1CE91EDE83160070D69C /* jsondata */,
 				ECE912FE1ED93E6B004F3B3A /* audio */,
 				ECE912F71ED9381E004F3B3A /* UI */,
 				ECE912C31ED937E0004F3B3A /* AppDelegate.swift */,
@@ -179,6 +188,30 @@
 				ECE913011ED93E7D004F3B3A /* pin.mp3 */,
 			);
 			name = audio;
+			sourceTree = "<group>";
+		};
+		ECEC1CE91EDE83160070D69C /* jsondata */ = {
+			isa = PBXGroup;
+			children = (
+				ECEC1CEA1EDE83280070D69C /* pinyin.json */,
+			);
+			name = jsondata;
+			sourceTree = "<group>";
+		};
+		ECEC1CEC1EDE83460070D69C /* jsonmodel */ = {
+			isa = PBXGroup;
+			children = (
+				ECEC1CED1EDE83540070D69C /* DataManager.swift */,
+			);
+			name = jsonmodel;
+			sourceTree = "<group>";
+		};
+		ECEC1CEF1EDE8A7D0070D69C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECEC1CF01EDE8A930070D69C /* PinyinModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +323,7 @@
 			files = (
 				ECE912CE1ED937E0004F3B3A /* LaunchScreen.storyboard in Resources */,
 				ECE913021ED93E7D004F3B3A /* chun.mp3 in Resources */,
+				ECEC1CEB1EDE83280070D69C /* pinyin.json in Resources */,
 				ECE913041ED93E7D004F3B3A /* pin.mp3 in Resources */,
 				ECE912CB1ED937E0004F3B3A /* Assets.xcassets in Resources */,
 				ECE913031ED93E7D004F3B3A /* men.mp3 in Resources */,
@@ -322,6 +356,8 @@
 				ECE912F21ED93806004F3B3A /* MKColor.swift in Sources */,
 				ECE912F41ED93810004F3B3A /* MKLayer.swift in Sources */,
 				ECE912C61ED937E0004F3B3A /* ViewController.swift in Sources */,
+				ECEC1CEE1EDE83540070D69C /* DataManager.swift in Sources */,
+				ECEC1CF11EDE8A930070D69C /* PinyinModel.swift in Sources */,
 				ECE912C41ED937E0004F3B3A /* AppDelegate.swift in Sources */,
 				ECE912FB1ED93849004F3B3A /* CardView.swift in Sources */,
 				ECE912F61ED93818004F3B3A /* CustomButton.swift in Sources */,
@@ -571,6 +607,7 @@
 				ECE912EA1ED937E0004F3B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECE912EB1ED937E0004F3B3A /* Build configuration list for PBXNativeTarget "StudentPronouceAppTests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +616,7 @@
 				ECE912ED1ED937E0004F3B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECE912EE1ED937E0004F3B3A /* Build configuration list for PBXNativeTarget "StudentPronouceAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +625,7 @@
 				ECE912F01ED937E0004F3B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
