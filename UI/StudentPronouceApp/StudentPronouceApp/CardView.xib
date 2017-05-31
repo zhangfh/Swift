@@ -11,8 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="StudentPronouceApp" customModuleProvider="target">
             <connections>
+                <outlet property="bihuaLabel" destination="YhR-rG-GTk" id="yuF-zi-4mb"/>
+                <outlet property="bushouLabel" destination="YNB-fJ-GMC" id="tsg-eh-IoZ"/>
                 <outlet property="imageView" destination="RHh-8o-ytq" id="dnQ-m5-M9L"/>
                 <outlet property="nextButton" destination="QSW-gT-T0i" id="gyv-JL-46l"/>
+                <outlet property="pininLabel" destination="Ulv-Ze-nj1" id="8NP-SF-ehv"/>
                 <outlet property="preButton" destination="F1d-4h-KHJ" id="OG7-of-9Ko"/>
             </connections>
         </placeholder>

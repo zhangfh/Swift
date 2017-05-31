@@ -29,6 +29,10 @@ class CardView: UIView {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var preButton: CustomButton!
     @IBOutlet weak var nextButton: CustomButton!
+    
+    @IBOutlet weak var pininLabel: UILabel!
+    @IBOutlet weak var bushouLabel: UILabel!
+    @IBOutlet weak var bihuaLabel: UILabel!
     weak var delegate : CardViewDelegate?
     
     override init(frame: CGRect) {
@@ -125,5 +129,20 @@ class CardView: UIView {
         self.imageView.image = image
     }
     
+    func setPinyinWith(_ text: String)
+    {
+        self.pininLabel.text = text
+    }
     
+    
+    func setBushouWith(_ text: String)
+    {
+        self.bushouLabel.text = text
+    }
+    
+    
+    func setBihuaWith(_ text: String)
+    {
+        self.bihuaLabel.text = text
+    }
 }
