@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainController" id="BYZ-38-t0r" customClass="ViewController" customModule="StartAdvertising" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9244391918" green="0.94930678609999997" blue="0.038394749159999998" alpha="0.95786741210000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Advertising Controller-->
+        <scene sceneID="RkS-dg-6bp">
+            <objects>
+                <viewController storyboardIdentifier="AdvertisingController" id="oO0-1c-orS" customClass="AdvertisingController" customModule="StartAdvertising" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kJA-NC-z8I"/>
+                        <viewControllerLayoutGuide type="bottom" id="QVx-qn-B4X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LE8-Z6-bVp" customClass="AdvertiseView" customModule="StartAdvertising" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RS7-sN-xAw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eqx-C3-Hfz" appends="YES" id="Whv-mM-WnX"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kN8-1c-Ujp">
+                                <rect key="frame" x="328" y="20" width="31" height="30"/>
+                                <state key="normal" title="跳过"/>
+                                <connections>
+                                    <action selector="skipButtonAction:" destination="LE8-Z6-bVp" eventType="touchUpInside" id="1ze-JM-7Mg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="RS7-sN-xAw" firstAttribute="leading" secondItem="LE8-Z6-bVp" secondAttribute="leading" id="4wt-Uk-TOz"/>
+                            <constraint firstItem="kN8-1c-Ujp" firstAttribute="trailing" secondItem="LE8-Z6-bVp" secondAttribute="trailingMargin" id="89P-bY-ZUS"/>
+                            <constraint firstItem="QVx-qn-B4X" firstAttribute="top" secondItem="RS7-sN-xAw" secondAttribute="bottom" id="9VJ-vs-zMY"/>
+                            <constraint firstAttribute="trailing" secondItem="RS7-sN-xAw" secondAttribute="trailing" id="HdE-nz-32g"/>
+                            <constraint firstItem="kN8-1c-Ujp" firstAttribute="top" secondItem="kJA-NC-z8I" secondAttribute="bottom" id="dnI-rN-GAj"/>
+                            <constraint firstItem="RS7-sN-xAw" firstAttribute="top" secondItem="LE8-Z6-bVp" secondAttribute="top" id="hD5-nf-4sJ"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="advImageView" destination="RS7-sN-xAw" id="Lar-aO-jdx"/>
+                            <outlet property="skipButton" destination="kN8-1c-Ujp" id="iKK-2v-anl"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="advertisingView" destination="LE8-Z6-bVp" id="3ZF-fC-qRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I64-1Q-wp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eqx-C3-Hfz">
+                    <connections>
+                        <action selector="pushToAd:" destination="oO0-1c-orS" id="3UR-vk-ToO"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="797.45127436281871"/>
+        </scene>
+    </scenes>
+</document>
